@@ -1,6 +1,8 @@
+import Contact from "./components/Contact";
 import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <HeroSection />
       <Services />
       <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
