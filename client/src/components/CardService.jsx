@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
  */
 const CardService = ({ imagen, title, description }) => {
   return (
-    <div className="flex flex-col w-full my-auto">
+    <div className="flex flex-col w-4/5 mx-auto my-auto hover:scale-105 duration-200 transition-all">
       {/* The image for the service card */}
       <img src={imagen} alt="display repair" />
       <div className="bg-slate-500 flex flex-col justify-center gap-4 bg-opacity-10 rounded-b-xl px-6 py-8">

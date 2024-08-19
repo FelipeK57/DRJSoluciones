@@ -1,6 +1,12 @@
 import CardTestimonial from "./CartTestimonial";
 import Testimonio1 from "../assets/imgtestimonio.svg";
 
+/**
+ * This component renders the testimonials section of the website.
+ * The section contains a background image, a title, and a grid of testimonial cards.
+ *
+ * @returns {React.ReactElement} - The Testimonials component.
+ */
 function Testimonials() {
   return (
     <main id="testimonios" className="relative">
@@ -8,14 +14,20 @@ function Testimonials() {
         <h1 className="lg:text-6xl text-4xl font-bold py-10 text-slate-50">
           Testimonios
         </h1>
+
+        {/* The grid of testimonial cards is rendered here */}
         <article className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-10 w-[70%] lg:w-[80%] py-10">
-          <div className="flex flex-col gap-4 px-8 py-4 row-span-2 bg-slate-500 items-center justify-center bg-opacity-10 rounded-lg">
+          {/* The first testimonial card is rendered here */}
+          <div className="flex flex-col gap-4 px-8 py-4 row-span-2 bg-slate-500 items-center hover:bg-opacity-50 transition-all duration-200 justify-center bg-opacity-10 rounded-lg">
             <div className="flex flex-row items-center justify-start gap-4 w-full">
+              {/* The image for the testimonial card is rendered here */}
               <img
                 className="hidden size-14 xl:size-20 xl:block"
                 src={Testimonio1}
                 alt="display repair"
               />
+
+              {/* The content of the testimonial card is rendered here */}
               <div className="flex flex-col justify-between">
                 <p className="lg:text-2xl text-xl font-bold text-slate-50">
                   Carmen S.
@@ -34,6 +46,7 @@ function Testimonials() {
             </p>
           </div>
 
+          {/* The second testimonial card is rendered here */}
           <CardTestimonial
             name={"Lucía R."}
             service={"Reparación partes internas"}
@@ -41,6 +54,8 @@ function Testimonials() {
               "“Pensé que mi celular estaba perdido, pero lo revivieron. Reemplazaron las partes internas dañadas, y ahora funciona mejor que nunca. ¡Muy recomendados!”"
             }
           />
+
+          {/* The third testimonial card is rendered here */}
           <CardTestimonial
             name={"Ana T."}
             service={"Reparación de software"}
@@ -48,6 +63,8 @@ function Testimonials() {
               "“Mi celular estaba lento y con errores, pero después del servicio, parece nuevo. ¡Gran trabajo!”"
             }
           />
+
+          {/* The fourth testimonial card is rendered here */}
           <CardTestimonial
             name={"Mariana S."}
             service={"Reparación partes internas"}
@@ -55,6 +72,8 @@ function Testimonials() {
               "“El equipo diagnosticó y reparó el daño interno de mi celular rápidamente. La atención fue de primera.”"
             }
           />
+
+          {/* The fifth testimonial card is rendered here */}
           <CardTestimonial
             imagen={Testimonio1}
             name={"Esteban M."}
@@ -68,5 +87,6 @@ function Testimonials() {
     </main>
   );
 }
+
 
 export default Testimonials;

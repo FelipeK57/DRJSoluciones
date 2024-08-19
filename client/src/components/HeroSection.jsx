@@ -35,9 +35,13 @@ function HeroSection() {
           </p>
 
           {/* The button is rendered here */}
-          <button className="px-5 py-4 font-bold text-xl text-slate-50 bg-slate-500 bg-opacity-40 rounded-lg border-2 border-slate-50">
+          <a
+            href="https://api.whatsapp.com/send?phone=573135684165"
+            target="_blank"
+            className="px-5 py-4 font-bold text-xl text-slate-50 bg-slate-500 bg-opacity-40 rounded-lg border-2 border-slate-50 hover:bg-slate-700 transition-all duration-200"
+          >
             Realiza una cotización
-          </button>
+          </a>
         </div>
       </section>
     </main>

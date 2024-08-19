@@ -39,15 +39,6 @@ function Header() {
         </ul>
       </nav>
       {/* Button for mobile view */}
-      <div className="hidden lg:flex grow justify-end text-center">
-        <a
-          className="px-5 py-4 text-slate-50 bg-slate-500 bg-opacity-40 rounded-lg border-2 border-slate-50"
-          href="/aboutMe"
-        >
-          Sobre mi
-        </a>
-      </div>
-      {/* Button for mobile view */}
       <div className="relative p-2">
         <button onClick={handleClick} className="lg:hidden block">
           {open ? (
@@ -88,7 +79,7 @@ function Header() {
         </button>
         {open && (
           // Mobile menu for smaller screens
-          <div className="lg:hidden absolute text-xl mt-2 right-2 bg-slate-500 rounded-lg p-4 z-50 animate-fade-in-bg">
+          <div className="lg:hidden absolute text-xl mt-2 right-2 bg-slate-500 bg-opacity-75 rounded-lg p-4 z-50 animate-fade-in-bg">
             <ul className="flex flex-col gap-4 p-2 text-slate-50">
               <li className="hover:text-black transition-all duration-200">
                 <a href="#inicio">Inicio</a>
@@ -101,9 +92,6 @@ function Header() {
               </li>
               <li className="hover:text-black transition-all duration-200">
                 <a href="#contacto">Contacto</a>
-              </li>
-              <li className="hover:text-black transition-all duration-200">
-                <a href="/aboutMe">Sobre mi</a>
               </li>
             </ul>
           </div>
