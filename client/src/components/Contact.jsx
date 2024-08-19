@@ -1,4 +1,4 @@
-import ContactVector from "/src/assets/contactvector.svg";
+import ContactVector from "/contactvector.svg";
 /**
  * Contact component.
  * This component renders the contact section of the website.

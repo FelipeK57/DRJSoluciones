@@ -1,4 +1,4 @@
-import Vectores from "/src/assets/servicesvector.svg";
+import Vectores from "/servicesvector.svg";
 import DisplayImg from "../assets/image 1.svg";
 import InternImg from "../assets/image 2.svg";
 import SoftwareImg from "../assets/image.svg";
@@ -30,7 +30,7 @@ function Services() {
             viewBox="0 0 24 24"
             strokeWidth={1}
             stroke="currentColor"
-            className="size-10 mt-2"
+            className="size-10 mt-2 hidden lg:block"
           >
             <path
               strokeLinecap="round"
