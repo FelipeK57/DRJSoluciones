@@ -1,4 +1,4 @@
-import Vectores from "../assets/servicebg.svg";
+import Vectores from "/src/assets/servicesvector.svg";
 import DisplayImg from "../assets/image 1.svg";
 import InternImg from "../assets/image 2.svg";
 import SoftwareImg from "../assets/image.svg";

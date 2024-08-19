@@ -1,4 +1,4 @@
-import EndPage from "../assets/endpage.svg";
+import ContactVector from "/src/assets/contactvector.svg";
 /**
  * Contact component.
  * This component renders the contact section of the website.
@@ -14,7 +14,7 @@ function Contact() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover -z-10"
-        style={{ backgroundImage: `url(${EndPage})` }}
+        style={{ backgroundImage: `url(${ContactVector})` }}
       ></div>
       {/* Container for the section content */}
       <section className="flex flex-col items-center justify-center gap-10 py-20">
